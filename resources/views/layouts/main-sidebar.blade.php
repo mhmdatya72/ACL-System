@@ -38,6 +38,23 @@
             </li>
             <li class="side-item side-item-category">عام</li>
             <li class="slide">
+                <a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19.14 12.94c.04-.3.06-.61.06-.94s-.02-.64-.06-.94l2.03-1.58c.18-.14.23-.39.12-.59l-1.92-3.32c-.11-.19-.35-.26-.56-.2l-2.39.96c-.5-.38-1.04-.7-1.64-.94L14.96 2.5c-.05-.22-.24-.38-.47-.38h-3.98c-.23 0-.42.16-.47.38l-.36 2.46c-.6.24-1.14.56-1.64.94l-2.39-.96c-.21-.08-.45.01-.56.2l-1.92 3.32c-.11.19-.06.45.12.59l2.03 1.58c-.04.3-.06.61-.06.94s.02.64.06.94l-2.03 1.58c-.18.14-.23.39-.12.59l1.92 3.32c.11.19.35.26.56.2l2.39-.96c.5.38 1.04.7 1.64.94l.36 2.46c.05.22.24.38.47.38h3.98c.23 0 .42-.16.47-.38l.36-2.46c.6-.24 1.14-.56 1.64-.94l2.39.96c.21.08.45-.01.56-.2l1.92-3.32c.11-.19.06-.45-.12-.59l-2.03-1.58zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+                    </svg><span class="side-menu__label">الإعدادات</span><i class="angle fe fe-chevron-down"></i></a>
+                <ul class="slide-menu">
+                    <li><a class="slide-item" href="{{ route('groups.create') }}"> اضافة مجموعه </a></li>
+                    <li><a class="slide-item" href="{{ route('groups.index') }}">مشاهدة المجموعات</a></li>
+                    <li><a class="slide-item" href="{{ route('groups.permissions') }}"> تصريح المجموعات </a></li>
+                    <li><a class="slide-item" href="{{ url('/' . $page='map-leaflet') }}"> تغير كلمة السر </a></li>
+                    <li><a class="slide-item" href="{{ url('/' . $page='map-leaflet') }}"> العملاء </a></li>
+                    <li><a class="slide-item" href="{{ url('/' . $page='map-leaflet') }}"> نسخه احتياطية DB </a></li>
+
+                </ul>
+            </li>
+            <li class="slide">
                 <a class="side-menu__item" href="{{ url('/' . $page='icons') }}"><svg xmlns="http://www.w3.org/2000/svg"
                         class="side-menu__icon" viewBox="0 0 24 24">
                         <path d="M0 0h24v24H0V0z" fill="none" />
@@ -227,23 +244,7 @@
                     </svg><span class="side-menu__label">الويدجت</span><span
                         class="badge badge-warning side-badge">شائع</span></a>
             </li>
-            <li class="slide">
-                <a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0V0z" fill="none" />
-                        <path
-                            d="M19.14 12.94c.04-.3.06-.61.06-.94s-.02-.64-.06-.94l2.03-1.58c.18-.14.23-.39.12-.59l-1.92-3.32c-.11-.19-.35-.26-.56-.2l-2.39.96c-.5-.38-1.04-.7-1.64-.94L14.96 2.5c-.05-.22-.24-.38-.47-.38h-3.98c-.23 0-.42.16-.47.38l-.36 2.46c-.6.24-1.14.56-1.64.94l-2.39-.96c-.21-.08-.45.01-.56.2l-1.92 3.32c-.11.19-.06.45.12.59l2.03 1.58c-.04.3-.06.61-.06.94s.02.64.06.94l-2.03 1.58c-.18.14-.23.39-.12.59l1.92 3.32c.11.19.35.26.56.2l2.39-.96c.5.38 1.04.7 1.64.94l.36 2.46c.05.22.24.38.47.38h3.98c.23 0 .42-.16.47-.38l.36-2.46c.6-.24 1.14-.56 1.64-.94l2.39.96c.21.08.45-.01.56-.2l1.92-3.32c.11-.19.06-.45-.12-.59l-2.03-1.58zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
-                    </svg><span class="side-menu__label">الإعدادات</span><i class="angle fe fe-chevron-down"></i></a>
-                <ul class="slide-menu">
-                    <li><a class="slide-item" href="{{ route('groups.create') }}"> اضافة مجموعه </a></li>
-                    <li><a class="slide-item" href="{{ route('groups.index') }}">مشاهدة المجموعات</a></li>
-                    <li><a class="slide-item" href="{{ route('groups.permissions') }}"> تصريح المجموعات </a></li>
-                    <li><a class="slide-item" href="{{ url('/' . $page='map-leaflet') }}"> تغير كلمة السر </a></li>
-                    <li><a class="slide-item" href="{{ url('/' . $page='map-leaflet') }}"> العملاء </a></li>
-                    <li><a class="slide-item" href="{{ url('/' . $page='map-leaflet') }}"> نسخه احتياطية DB </a></li>
 
-                </ul>
-            </li>
             <li class="side-item side-item-category">الصفحات</li>
             <li class="slide">
                 <a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><svg
